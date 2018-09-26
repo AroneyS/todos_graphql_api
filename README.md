@@ -1,24 +1,47 @@
-# README
+# Todo List GraphQL API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![forthebadge](https://forthebadge.com/images/badges/made-with-ruby.svg)](https://forthebadge.com)
 
-Things you may want to cover:
+## Setting up
 
-* Ruby version
+#### Requirements
 
-* System dependencies
+- Ruby 2.5.1
+- Rails 5.2.0
+- Postgresql => 10.3
+- [Graphiql](https://github.com/skevy/graphiql-app) - The GraphQL client
+- Your favorite editor.
 
-* Configuration
+#### Installation
 
-* Database creation
+**Clone the repo.**
+```bash
+git clone https://github.com/ranchow/todos_graphql-api.git
+```
 
-* Database initialization
+**cd into the directory and install the reqirements.**
+```bash
+cd todos_graphql-api && bundle install
+```
 
-* How to run the test suite
+**set up the database**
+```bash
+rails db:create; rails db:migrate; rails db:seed
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+**Start the server**
+```bash
+rails s
+```
 
-* Deployment instructions
+#### Running tests
 
-* ...
+Running all tests.
+```bash
+bundle exec rspec
+```
+
+Running a specific test file
+```bash
+bundle exec rspec ./spec/path/to/file
+```
