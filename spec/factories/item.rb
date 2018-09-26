@@ -1,3 +1,4 @@
+=begin
 FactoryBot.define do
   factory :item do
     sequence(:name) { |n| "Item name #{n}"}
@@ -6,3 +7,4 @@ FactoryBot.define do
     todo_list
   end
 end
+=end
